@@ -66,7 +66,7 @@ export async function getServerSideProps({ query }) {
 
    return {
       props: {
-         properties: getPropertiesFilteredBy(purpose, rentFrequency, minPrice, maxPrice, roomsMin, bathsMin, sort, areaMax, furnishingStatus, categoryExternalID)
+         properties: await getPropertiesFilteredBy(purpose, rentFrequency, minPrice, maxPrice, roomsMin, bathsMin, sort, areaMax, furnishingStatus, categoryExternalID)
       },
    };
 }

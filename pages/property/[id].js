@@ -81,7 +81,7 @@ export default PropertyDetails;
 export async function getServerSideProps({ params: { id } }) {
    return {
       props: {
-         propertyDetails: getDetailsFor(id)
+         propertyDetails: await getDetailsFor(id)
       }
    };
 }

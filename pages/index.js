@@ -58,8 +58,8 @@ export default function Home({ propertiesForSale, propertiesForRent }) {
 export async function getStaticProps() {
    return {
       props: {
-         propertiesForSale: getLastPropertiesForSale(),
-         propertiesForRent: getLastPropertiesForRent(),
+         propertiesForSale: await getLastPropertiesForSale(),
+         propertiesForRent: await getLastPropertiesForRent(),
       }
    };
 }
