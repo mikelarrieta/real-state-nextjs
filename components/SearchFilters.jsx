@@ -17,6 +17,11 @@ function SearchFilters() {
          if (item.value && filterValues?.[item.name]) {
             query[item.name] = item.value;
          }
+
+         // filterValues resetted
+         if (filterValues?.[item.name] === "") {
+            delete query[item.name];
+         }
       });
 
       router.push({ pathname: path, query });
