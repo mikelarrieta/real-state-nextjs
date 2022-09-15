@@ -85,13 +85,3 @@ export async function getServerSideProps({ params: { id } }) {
       }
    };
 }
-
-// TODO DELETE
-// export async function getServerSideProps({ params: { id } }) {
-//    const data = await fetchApi(`${baseUrl}/properties/detail?externalID=${id}`);
-//    return {
-//       props: {
-//          propertyDetails: data
-//       }
-//    };
-// }
