@@ -1,4 +1,3 @@
-import properties from "../data/properties.json" assert {type: "json"};
 import axios from "axios";
 
 export async function getLastPropertiesForRent() {
